@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding-Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            font-family: sans-serif;
+            margin: 15px 30px;
+            font-size: 19px;
+            padding: 8px;
+            border: 2px solid rgb(97, 100, 102);
+            background-color: rgb(223, 255, 255);
+        }
+        P{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        select,
+        textarea {
+            margin: 10px;
+            width: 100%;
+            padding: 13px 20px;
+            background-color: rgb(238, 235, 230);
+            border-radius: 5px;
+
+        }
+        fieldset{
+            background-color: aliceblue;
+            font-size: 19px;
+        }
+        .main-heading{
+            text-align: center;
+        }
+        input[type = "submit"]
+        {
+            background-color: rgb(84, 90, 90);
+            width: 100%;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+        input[type = "submit"]:hover{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-heading">Coding-Form</h1>
+        <hr>
+        <p>Required feild are Followed by *</p>
+        <h2>Contact -Information</h2>
+        
+        <p>
+            Name :<input type="text" name="name" id="name" placeholder="Enter Your Name">
+        </p>
+
+
+        <fieldset>
+            <legend>Gender</legend>
+            Male: <input type="radio" name="Gender" id="Male">
+            Female: <input type="radio" name="Gender" id="Female">
+        </fieldset>
+
+        <br>
+        <p>
+            Address: <textarea name="Address" id="Address" cols="30" rows="10">Enter Your Address</textarea>
+        </p>
+        <br>
+        <p>
+            Email : <input type="Email" name="Email" id="Email" placeholder="Enter your Email">
+        </p>
+        <br>
+        <p>
+            Rate Yourself as Coder: <input type="number" name="number" id="Rating">
+        </p>
+        <br>
+        Lanuages:
+        <select name="Programming Lanuages" id="lanusges">
+            <option value="">Select a Lanuages</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="Java-Script">Java-Script</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Pay_Now">
+</body>
+
+</html>
